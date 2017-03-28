@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  width: 100%; }
+
+svg .target-white {
+  stroke: #fff; }
+svg .target-black {
+  stroke: #050505; }
+svg .target-light-blue {
+  stroke: #05ffff; }
+svg .target-red {
+  stroke: #ff0505; }
+svg .target-gold {
+  stroke: #ffff05; }
+
+body {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.625; }
+
+article p {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+#main {
+  background: #FE9ACE;
+  background: linear-gradient(to bottom, #FE9ACE 0%, #f263ae 70%); }
+@media(max-width: 1280px) {
+  #main #what_should_i_do {
+    background: #f263ae; } }
+@media(min-width: 1281px) {
+  #main {
+    background-image: url("fondo-large.jpg");
+    background-repeat: no-repeat; }
+    #main #what_should_i_do {
+      background: linear-gradient(to right, rgba(242, 99, 174, 0.19) 0%, #f263ae 42%, #f263ae 58%, rgba(242, 99, 174, 0.19) 100%); } }
+@media(min-width: 641px) {
+  header,
+  #what_is_this {
+    width: 640px;
+    margin: 0 auto; } }
+#what_is_this {
+  font-weight: bold; }
+  #what_is_this p {
+    margin-bottom: 1.625em; }
+
+#what_should_i_do {
+  font-weight: bold;
+  text-align: center; }
+  #what_should_i_do .target-button circle {
+    fill: transparent;
+    stroke-width: 3px; }
+  #what_should_i_do .target-button rect {
+    fill: #f263ae; }
+  #what_should_i_do .target-button text {
+    fill: #ffff05;
+    font-size: 1em; }
+
+#what_is_here_for_me {
+  background: white; }
+  #what_is_here_for_me ul {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around; }
+@media(min-width: 641px) {
+  #what_is_here_for_me ul {
+    width: 640px;
+    margin: 0 auto; } }
+    #what_is_here_for_me ul li {
+      position: relative;
+      flex-basis: auto;
+      width: 40.77%;
+      text-align: center;
+      max-width: 10rem; }
+      #what_is_here_for_me ul li a {
+        outline: none; }
+      #what_is_here_for_me ul li h1 {
+        position: absolute;
+        top: 1rem;
+        width: 100%;
+        font-weight: bold;
+        font-family: Georgia, Times, serif;
+        font-size: 1.23rem;
+        color: #cc006a;
+        background: white;
+        border: 1px solid #FE9ACE;
+        border-width: 1px 0; }
+      #what_is_here_for_me ul li img {
+        display: block; }
+
+/*# sourceMappingURL=styles.css.map */
