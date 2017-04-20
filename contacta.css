@@ -91,6 +91,9 @@ footer {
     text-align: center;
     font-weight: bold;
     margin-bottom: 1.625rem; }
+  @media (min-width: 1280px) {
+    #main picture img {
+      width: 163px; } }
   #main p {
     margin: 0; }
   #main ul {
