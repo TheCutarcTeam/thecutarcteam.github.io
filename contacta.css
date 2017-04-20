@@ -87,6 +87,8 @@ footer {
 #main {
   background: #FE9ACE;
   padding-bottom: 1.625rem; }
+  #main a {
+    color: white; }
   #main header {
     text-align: center;
     font-weight: bold;
