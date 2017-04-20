@@ -128,6 +128,9 @@ footer {
       font-weight: bold;
       padding: .175em .62em .2em 1.62em;
       display: inline; }
-  #main article p {
-    margin-left: 1.62em;
-    margin-bottom: 1.625em; }
+  #main article p,
+  #main article ol {
+    margin-left: 1.625rem;
+    margin-bottom: 1.625rem; }
+  #main article ol {
+    list-style: outside none lower-roman; }
