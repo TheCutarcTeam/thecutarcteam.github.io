@@ -84,50 +84,32 @@ footer {
     width: 100%;
     height: 1.625rem; } }
 
-#intro {
-  background: #FE9ACE; }
-  @media (max-width: 1280px) {
-    #intro {
-      padding-bottom: 1.625em; } }
-  @media (min-width: 1280px) {
-    #intro {
-      height: 470px;
-      background-image: url("i/logo-parapeto.png");
-      background-repeat: no-repeat; }
-      #intro picture img {
-        width: 163px; } }
+#main {
+  background: #FE9ACE;
+  padding-bottom: 1.625rem; }
+  #main header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.625rem; }
+  #main p {
+    margin: 0; }
+  #main ul {
+    margin-left: 1em;
+    list-style: square; }
   @media (min-width: 640px) {
-    #intro header,
-    #intro article {
+    #main header,
+    #main article {
       width: 640px;
-      margin: 0 auto; }
-    #intro header {
+      margin-left: auto;
+      margin-right: auto; }
+    #main header {
       font-size: 2em; } }
   @media (max-width: 640px) {
-    #intro article p {
+    #main article {
       margin-left: 8vw;
       margin-right: 8vw; } }
-  #intro header {
-    text-align: center;
-    font-weight: bold; }
-  #intro header,
-  #intro article {
-    margin-bottom: 1.625em; }
 
-@media (min-width: 640px) {
-  #main {
-    width: 640px;
-    margin: 0 auto; } }
-
-#main article {
-  margin: 1em 0; }
-  #main article header {
-    margin-bottom: 1.625em; }
-    #main article header h1 {
-      background: #f263ae;
-      font-weight: bold;
-      padding: .175em .62em .2em 1.62em;
-      display: inline; }
-  #main article p {
-    margin-left: 1.62em;
-    margin-bottom: 1.625em; }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }

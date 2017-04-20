@@ -84,93 +84,75 @@ footer {
     width: 100%;
     height: 1.625rem; } }
 
-svg .target-white {
-  stroke: #fff; }
-
-svg .target-black {
-  stroke: #050505; }
-
-svg .target-light-blue {
-  stroke: #05ffff; }
-
-svg .target-red {
-  stroke: #ff0505; }
-
-svg .target-gold {
-  stroke: #ffff05; }
-
-#main {
-  background: #FE9ACE;
-  background: linear-gradient(to bottom, #FE9ACE 0%, #f263ae 75%); }
-  #main header {
-    margin-bottom: 1.625rem; }
+#intro {
+  background: #FE9ACE; }
   @media (max-width: 1280px) {
-    #main #what_should_i_do {
-      background: #f263ae; } }
+    #intro {
+      padding-bottom: 1.625em; } }
   @media (min-width: 1280px) {
-    #main {
-      background-image: url("i/fondo-large.jpg");
+    #intro {
+      height: 470px;
+      background-image: url("i/logo-parapeto.png");
       background-repeat: no-repeat; }
-      #main #what_should_i_do {
-        background: linear-gradient(to right, rgba(242, 99, 174, 0.19) 0%, #f263ae 42%, #f263ae 58%, rgba(242, 99, 174, 0.19) 100%); } }
+      #intro picture img {
+        width: 163px; } }
+  @media (min-width: 640px) {
+    #intro header,
+    #intro article {
+      width: 640px;
+      margin: 0 auto; }
+    #intro header {
+      font-size: 2em; } }
   @media (max-width: 640px) {
-    #main article p {
+    #intro article p {
       margin-left: 8vw;
       margin-right: 8vw; } }
-  @media (min-width: 640px) {
-    #main header,
-    #main #what_is_this {
-      width: 640px;
-      margin: 0 auto; } }
-
-#what_is_this {
-  font-weight: bold; }
-  #what_is_this p {
+  #intro header {
+    text-align: center;
+    font-weight: bold; }
+  #intro header,
+  #intro article {
     margin-bottom: 1.625em; }
 
-#what_should_i_do {
-  font-weight: bold;
-  text-align: center; }
-  #what_should_i_do .target-button circle {
-    fill: transparent;
-    stroke-width: 3px; }
-  #what_should_i_do .target-button rect {
-    fill: #f263ae; }
-  #what_should_i_do .target-button text {
-    fill: #ffff05;
-    font-size: 1em; }
-
-#what_is_here_for_me {
-  background: white;
-  margin-top: 1.625rem;
-  margin-bottom: 1.625rem; }
-  #what_is_here_for_me ul {
-    padding: 1.625rem 1rem;
-    display: flex;
-    justify-content: space-around; }
-    @media (min-width: 640px) {
-      #what_is_here_for_me ul {
-        width: 640px;
-        margin: 0 auto; } }
-    #what_is_here_for_me ul li {
-      position: relative;
-      flex-basis: auto;
-      width: 40.77%;
-      text-align: center;
-      max-width: 10rem; }
-      #what_is_here_for_me ul li a {
-        display: block;
-        outline: none; }
-      #what_is_here_for_me ul li h1 {
-        position: absolute;
-        top: 1rem;
-        width: 100%;
+#main {
+  padding-bottom: 1.625rem; }
+  @media (min-width: 640px) {
+    #main {
+      width: 640px;
+      margin-left: auto;
+      margin-right: auto; } }
+  #main article {
+    margin: 1em 0; }
+    #main article header {
+      margin-bottom: 1.625em; }
+      #main article header h1 {
+        background: #f263ae;
         font-weight: bold;
-        font-family: Georgia, Times, serif;
-        font-size: 1.23rem;
-        color: #cc006a;
-        background: white;
-        border: 1px solid #FE9ACE;
-        border-width: 1px 0; }
-      #what_is_here_for_me ul li img {
-        display: block; }
+        padding: .175em .62em .2em 1.62em;
+        display: inline; }
+    #main article p,
+    #main article ul {
+      margin-left: 1.625em;
+      margin-bottom: 1.625em; }
+    #main article li {
+      margin-left: 1em; }
+    #main article table.horarios {
+      margin-left: 2.625em;
+      width: 100%; }
+      #main article table.horarios th {
+        text-align: left; }
+    #main article .google-maps {
+      position: relative;
+      padding-bottom: 75%;
+      height: 0;
+      overflow: hidden; }
+      @media (max-width: 640px) {
+        #main article .google-maps {
+          margin-left: 4vw;
+          margin-right: 4vw; } }
+      #main article .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important; }
