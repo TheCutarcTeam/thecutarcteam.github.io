@@ -61,12 +61,12 @@ a:active,
 a:focus {
   outline: none; }
 
-footer {
+.footer {
   background: #FE9ACE;
   text-align: center;
-  font-size: .615rem;
+  font-size: 0.61538rem;
   line-height: 1.625rem; }
-  footer .sm img {
+  .footer .sm img {
     height: 1em;
     width: auto;
     position: relative;
@@ -76,7 +76,9 @@ footer {
   html {
     position: relative;
     min-height: 100%; }
-  footer {
+  body {
+    padding-bottom: 1.625rem; }
+  .footer {
     background: linear-gradient(to right, #f263ae 0, #FE9ACE 9vw, #FE9ACE 81vw, #f263ae 100%);
     position: absolute;
     left: 0;

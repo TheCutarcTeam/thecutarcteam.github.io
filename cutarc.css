@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain) */
@@ -45,9 +46,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-img {
-  width: 100%; }
-
 body {
   background: white;
   font-family: "Montserrat", sans-serif;
@@ -86,77 +84,96 @@ a:focus {
     width: 100%;
     height: 1.625rem; } }
 
-#intro {
-  background: #FE9ACE; }
-  #intro a {
+.reg-a {
+  background: #FE9ACE;
+  padding-bottom: 3.25rem; }
+  .reg-a a {
     color: white; }
-  @media (max-width: 1280px) {
-    #intro {
-      padding-bottom: 1.625em; } }
-  @media (min-width: 1280px) {
-    #intro {
-      height: 470px;
-      background-image: url("i/logo-parapeto.png");
-      background-repeat: no-repeat; }
-      #intro picture img {
-        width: 163px; } }
-  @media (min-width: 640px) {
-    #intro header,
-    #intro article {
-      width: 640px;
-      margin: 0 auto; }
-    #intro header {
-      font-size: 2em; } }
+  .reg-a header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.625em; }
   @media (max-width: 640px) {
-    #intro article p {
+    .reg-a article p {
       margin-left: 8vw;
       margin-right: 8vw; } }
-  #intro header {
-    text-align: center;
-    font-weight: bold; }
-  #intro header,
-  #intro article {
-    margin-bottom: 1.625em; }
-
-#main {
-  padding-bottom: 1.625rem; }
   @media (min-width: 640px) {
-    #main {
+    .reg-a header {
+      font-size: 2em; }
+    .reg-a header,
+    .reg-a article {
       width: 640px;
       margin-left: auto;
       margin-right: auto; } }
-  #main article {
-    margin: 1em 0; }
-    #main article header {
-      margin-bottom: 1.625em; }
-      #main article header h1 {
-        background: #f263ae;
-        font-weight: bold;
-        padding: .175em .62em .2em 1.62em;
-        display: inline; }
-    #main article p,
-    #main article ul {
-      margin-left: 1.625em;
-      margin-bottom: 1.625em; }
-    #main article li {
-      margin-left: 1em; }
-    #main article table.horarios {
-      margin-left: 2.625em;
-      width: 100%; }
-      #main article table.horarios th {
-        text-align: left; }
-    #main article .google-maps {
+  @media (min-width: 1280px) {
+    .reg-a.escuela {
       position: relative;
-      padding-bottom: 75%;
-      height: 0;
-      overflow: hidden; }
-      @media (max-width: 640px) {
-        #main article .google-maps {
-          margin-left: 4vw;
-          margin-right: 4vw; } }
-      #main article .google-maps iframe {
+      height: 40vw;
+      background-image: url("i/ilustración-escuela.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: 100%; }
+      .reg-a.escuela header {
+        display: flex;
+        justify-content: center; }
+        .reg-a.escuela header h1 {
+          position: relative;
+          top: 44px; }
+      .reg-a.escuela article {
         position: absolute;
-        top: 0;
+        top: 60%;
         left: 0;
-        width: 100% !important;
-        height: 100% !important; }
+        right: 0; } }
+  @media (min-width: 1440px) {
+    .reg-a.escuela {
+      height: 32vw;
+      background-size: 80%; } }
+  @media (min-width: 1920px) {
+    .reg-a.escuela {
+      height: 27vw;
+      background-size: 60%; }
+      .reg-a.escuela article {
+        top: 50%; } }
+
+@media (min-width: 640px) {
+  .reg-b {
+    width: 640px;
+    margin: 0 auto; } }
+
+.reg-b article {
+  margin: 1.625rem 0; }
+  .reg-b article header {
+    margin-bottom: 1.625em; }
+    .reg-b article header h1 {
+      background: #f263ae;
+      font-weight: bold;
+      padding: .175em .62em .2em 1.62em;
+      display: inline; }
+  .reg-b article p,
+  .reg-b article ol {
+    margin-left: 1.625rem;
+    margin-bottom: 1.625rem; }
+  .reg-b article ol {
+    list-style: outside none lower-roman; }
+
+table.horarios {
+  margin-left: 2.625rem;
+  width: 100%; }
+  table.horarios th {
+    text-align: left; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+  @media (max-width: 640px) {
+    .google-maps {
+      margin-left: 4vw;
+      margin-right: 4vw; } }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
