@@ -154,7 +154,7 @@ a:focus {
     margin-left: 1.625rem;
     margin-bottom: 1.625rem; }
   .reg-b article ol {
-    list-style: outside none lower-roman; }
+    list-style: lower-roman outside none; }
 
 table.horarios {
   margin-left: 2.625rem;
